@@ -17,6 +17,8 @@ samples, guidance on mobile development, and a full API reference.
 
 
 
+
+
 1.新建项目后，android 目录下的 MainActivity 报错，无法导入FlutterActivity 的包：
 
   -   解决方式：删除项目里android 文件夹，在 Terminal  中执行 flutter create .  可解决。
