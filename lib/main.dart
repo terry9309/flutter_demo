@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/dartbase.dart';
 
 //应用入口
 void main() {
@@ -45,7 +46,9 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             ElevatedButton(onPressed: (){
 
-
+               Navigator.push(context, MaterialPageRoute(builder: (context) {
+                 return const DartBase();
+               }));
 
 
             }, child: const Text("基础控件"))

@@ -15,9 +15,7 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-
-
-
+c
 
 1.新建项目后，android 目录下的 MainActivity 报错，无法导入FlutterActivity 的包：
 
