@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/dartbase.dart';
+import 'package:flutter_demo/base/dartbase.dart';
+import 'package:flutter_demo/weight/base_weight.dart';
 
 //应用入口
 void main() {
@@ -45,10 +46,17 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ElevatedButton(onPressed: (){
-
-               Navigator.push(context, MaterialPageRoute(builder: (context) {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
                  return const DartBase();
                }));
+
+
+            }, child: const Text("基础语法")),
+
+            ElevatedButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return const BaseWeight();
+              }));
 
 
             }, child: const Text("基础控件"))
