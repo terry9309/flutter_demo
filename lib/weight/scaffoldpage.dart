@@ -31,7 +31,7 @@ class ScaffoldPage extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.access_time_sharp,color: Colors.black26,),
             onPressed: () {
-              // ToastUtil.toastShort("右侧按钮");
+               ToastUtil.toastShort("右侧按钮");
             },
           ),
         ],
@@ -40,8 +40,14 @@ class ScaffoldPage extends StatelessWidget {
 
 
       body: Container(
-        color: Colors.cyanAccent,
-    ),
+         child: const Icon(
+           Icons.ac_unit_rounded,
+           color: Colors.red,
+           semanticLabel: "user", ///语意标签
+           size: 50,    ///大小
+           textDirection: TextDirection.ltr,///对齐方式
+         ),
+     ),
 
     );
   }

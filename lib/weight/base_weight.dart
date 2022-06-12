@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/weight/button_page.dart';
+import 'package:flutter_demo/weight/image_page.dart';
+import 'package:flutter_demo/weight/listview_page.dart';
 import 'package:flutter_demo/weight/scaffoldpage.dart';
 import 'package:flutter_demo/weight/textpage.dart';
 
@@ -35,7 +38,36 @@ class BaseWeight extends StatelessWidget {
                             return const ScaffoldPage();
                           }));
                     },
-                    child: const Text("Scaffold"))
+                    child: const Text("Scaffold")),
+
+
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                            return const ImagePage();
+                          }));
+                    },
+                    child: const Text("Image")),
+
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                            return const ButtonPage();
+                          }));
+                    },
+                    child: const Text("Button")),
+
+
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                            return const ListViewPage();
+                          }));
+                    },
+                    child: const Text("ListView"))
               ],
             ),
           ),
