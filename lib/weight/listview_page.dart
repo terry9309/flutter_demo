@@ -19,8 +19,6 @@ class ListViewPage extends StatelessWidget {
           Text("第三条"),
         ],
 
-
-
       ),*/
 
       ///方式二：大量数据动态创建
