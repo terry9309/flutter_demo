@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_demo/base/dartbase.dart';
 import 'package:flutter_demo/weight/base_weight.dart';
+import 'package:flutter_demo/weight/tabs.dart';
 
 
 
@@ -86,8 +87,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    return const MaterialApp(home: Tabs());
 
-    return Scaffold(
+
+    /*return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
@@ -114,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
 
-    );
+    );*/
   }
 
 
