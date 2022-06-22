@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/page/tab/tab_bar.dart';
+import 'package:flutter_demo/weight/align_center_page.dart';
 import 'package:flutter_demo/weight/button_page.dart';
 import 'package:flutter_demo/weight/image_page.dart';
 import 'package:flutter_demo/weight/list_title_page.dart';
 import 'package:flutter_demo/weight/listview_page.dart';
 import 'package:flutter_demo/weight/row_column_page.dart';
 import 'package:flutter_demo/weight/scaffoldpage.dart';
+import 'package:flutter_demo/weight/stack_page.dart';
 import 'package:flutter_demo/weight/text_field_page.dart';
 import 'package:flutter_demo/weight/textpage.dart';
 
@@ -100,7 +103,34 @@ class BaseWeight extends StatelessWidget {
                             return  TextFiledPage();
                           }));
                     },
-                    child: const Text("TextFiled"))
+                    child: const Text("TextFiled")),
+
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                            return  TabBarPage();
+                          }));
+                    },
+                    child: const Text("TabBar")),
+
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                            return  AlignCenterPage();
+                          }));
+                    },
+                    child: const Text("Align -- Center")),
+
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                            return  StackPage();
+                          }));
+                    },
+                    child: const Text("Stack"))
               ],
             ),
           ),

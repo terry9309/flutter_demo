@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/page/home_page.dart';
 import 'package:flutter_demo/page/mine_page.dart';
 import 'package:flutter_demo/page/near_page.dart';
+import 'package:flutter_demo/page/tab/tab_bar.dart';
 
 class Tabs  extends StatefulWidget{
 
@@ -25,9 +26,9 @@ class _TabsState extends State<Tabs>{
 
    int _curIndex = 0;
 
-   List _pageList = [
+   final List _pageList = [
           HomePage(),
-          NearPage(),
+          TabBarPage(),
           MinePage(),
    ];
 
@@ -39,7 +40,7 @@ class _TabsState extends State<Tabs>{
 
          body: _pageList[_curIndex],
 
-        bottomNavigationBar: BottomNavigationBar(
+         bottomNavigationBar: BottomNavigationBar(
            currentIndex: _curIndex,
 
            onTap: (int i){

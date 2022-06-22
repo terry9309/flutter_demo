@@ -183,7 +183,7 @@ class _TextFiledPageState extends State<TextFiledPage>{
                          selection: TextSelection.fromPosition(
                            TextPosition(
                                affinity: TextAffinity.downstream,
-                               offset: name?.length ?? 0),
+                               offset: name.length ),
                          ))),
 
                      decoration: const InputDecoration(
